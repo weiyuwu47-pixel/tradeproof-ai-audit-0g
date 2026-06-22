@@ -9,6 +9,14 @@ The scenario: an NTC thermistor factory's internal business system generates one
 
 The public report is not generated from a separate sanitized snapshot. AI receives the confidential input, then removes or aggregates sensitive information during report generation.
 
+## Hackathon Links
+
+- Demo URL: https://tradeproof-ai-audit-0g-rm13199ck-yvonne-xiao.vercel.app/
+- Thumbnail URL: https://raw.githubusercontent.com/weiyuwu47-pixel/tradeproof-ai-audit-0g/main/web/public/cover.png
+- Repository: https://github.com/weiyuwu47-pixel/tradeproof-ai-audit-0g
+
+The deployed frontend is a static showcase. It reads only public demo artifacts from `web/public/demo-data/`; it does not read `.env`, private keys, or compute API keys.
+
 ## Flow
 
 ```text
@@ -224,6 +232,18 @@ Start the page:
 ```bash
 npm run web
 ```
+
+Build the static frontend for Vercel:
+
+```bash
+npm run web:build
+```
+
+When deploying from the repository root, Vercel uses `vercel.json`:
+
+- Build Command: `npm run web:build`
+- Output Directory: `web/dist`
+- Install Command: `npm install && cd web && npm install`
 
 ## Proof Model
 
