@@ -1,0 +1,108 @@
+{
+  "metadata_version": "tradeproof.report-proof.v1",
+  "report_period": "2025-Q4",
+  "reportPeriod": "2025-Q4",
+  "report_type": "Manufacturing Business Capability Report",
+  "generated_at": "2026-06-21T15:49:45.556Z",
+  "generatedAt": "2026-06-21T15:49:45.556Z",
+  "generatedBy": "0G Compute",
+  "compute_mode": "0g_private_computer",
+  "computeMode": "0g_private_computer",
+  "compute_provider": "0G Private Computer",
+  "computeProvider": "0G Private Computer",
+  "model_id": "0gm-1.0-35b-a3b",
+  "modelId": "0gm-1.0-35b-a3b",
+  "input_snapshot_count": 1,
+  "inputSnapshotCount": 1,
+  "hash_algorithm": "sha256",
+  "hashAlgorithm": "sha256",
+  "rawSnapshotHash": "0x8346c02c0d76ef702acbc4a3b3385c8dfd36e1152d4168f1323c7153f227f57c",
+  "fullReportHash": "0x53c529e5c62f279bb57289dfbb191a0695d91f8a9a3360a3e0f9be514a75ec7f",
+  "publicReportHash": "0x456e056a023ba1ffc4c0a4c899b5cdafa7124de4957bc21a79239ea04648eded",
+  "promptHash": "0x8f9a6562dff31688ed2183227c7adc2b37054aee9b79a32575c5996203db0192",
+  "redactionPolicyHash": "0x24c4259da599b9cf278f775ecbff4f236f03329cab942625aa4a904f9c4f2e1a",
+  "raw_snapshot": {
+    "path": "data/raw-business-records-2025-q4.json",
+    "snapshot_id": "NTC-EXPORT-2025-Q4-SNAPSHOT-001",
+    "hash_algorithm": "sha256",
+    "hash": "0x8346c02c0d76ef702acbc4a3b3385c8dfd36e1152d4168f1323c7153f227f57c",
+    "storage_root_hash": "0x7e16fb841dabb3d57b54d2f6861a03c7aacb5e3f295bfa83dcdb01e053524a4b",
+    "storage_tx_hash": "",
+    "uploaded_at": "2026-06-21T15:50:17.789Z"
+  },
+  "redaction_policy": {
+    "path": "config/redaction-policy.json",
+    "policy_id": "tradeproof-public-redaction-v1",
+    "hash_algorithm": "sha256",
+    "hash": "0x24c4259da599b9cf278f775ecbff4f236f03329cab942625aa4a904f9c4f2e1a"
+  },
+  "prompt": {
+    "hash_algorithm": "sha256",
+    "hash": "0x8f9a6562dff31688ed2183227c7adc2b37054aee9b79a32575c5996203db0192"
+  },
+  "reports": {
+    "full_internal": {
+      "path": "data/full-report-2025-q4.json",
+      "hash_algorithm": "sha256",
+      "hash": "0x53c529e5c62f279bb57289dfbb191a0695d91f8a9a3360a3e0f9be514a75ec7f",
+      "storage_root_hash": "0x5c1d65653dacc99b394168ea2c87e40d2ac103426df5cd47d59c08a83d2d5568",
+      "storage_tx_hash": "0xb6c63f11fe1d4c7c045ab402c4fd1894e2329ac8884dc3faf29545c2c3ab804f",
+      "uploaded_at": "2026-06-21T15:50:33.972Z"
+    },
+    "redacted_public": {
+      "path": "data/public-report-2025-q4.json",
+      "hash_algorithm": "sha256",
+      "hash": "0x456e056a023ba1ffc4c0a4c899b5cdafa7124de4957bc21a79239ea04648eded",
+      "storage_root_hash": "0xf0016f88f1a47298528e33a932b1f7fe927dfe745a793257892253ef7f55d765",
+      "storage_tx_hash": "0x41935e296607f0496cdb91fb76fcab5ad3f48a6d3000056f21fa976f4f2af5d5",
+      "uploaded_at": "2026-06-21T15:50:48.021Z"
+    }
+  },
+  "proof_registry": {
+    "network": "testnet",
+    "contract_address": "0x671637567Ff8aDDeb53d1eB27641c7b6Af1B3e65",
+    "proof_id": 1,
+    "transaction_hash": "0x09983fc7c4bbd88313613dfebab577cdfa6bb6cc6ec173145c9e521206102638",
+    "chain_tx_hash": "0x09983fc7c4bbd88313613dfebab577cdfa6bb6cc6ec173145c9e521206102638",
+    "block_number": 39985018,
+    "created_at": "2026-06-21T15:51:38.130Z"
+  },
+  "metadata_file": {
+    "path": "data/report-proof-metadata-2025-q4.json",
+    "hash_algorithm": "sha256",
+    "hash": "0x13c0b7bab04c16ed80ca5fb09b42d93c8986b9bdc88ccc554319ea3e729f6183",
+    "storage_root_hash": "0x5b3dcdfaf5c4fdaedaddb1744e26086e8dcdb374c14e2d773d9c5710e8147df8",
+    "storage_tx_hash": "0x95da4f0c8e45e8a394d2f7bed8920baeafd2a1e21c5a643525d17fad774432ff",
+    "uploaded_at": "2026-06-21T15:51:06.919Z"
+  },
+  "note": "One confidential raw business snapshot is the single input. The full internal report and redacted public report are both generated from that same input.",
+  "storage_bundle": {
+    "uploaded_at": "2026-06-21T15:50:48.021Z",
+    "files": {
+      "raw_snapshot": {
+        "path": "data/raw-business-records-2025-q4.json",
+        "storage_root_hash": "0x7e16fb841dabb3d57b54d2f6861a03c7aacb5e3f295bfa83dcdb01e053524a4b",
+        "storage_tx_hash": "",
+        "uploaded_at": "2026-06-21T15:50:17.789Z"
+      },
+      "full_internal_report": {
+        "path": "data/full-report-2025-q4.json",
+        "storage_root_hash": "0x5c1d65653dacc99b394168ea2c87e40d2ac103426df5cd47d59c08a83d2d5568",
+        "storage_tx_hash": "0xb6c63f11fe1d4c7c045ab402c4fd1894e2329ac8884dc3faf29545c2c3ab804f",
+        "uploaded_at": "2026-06-21T15:50:33.972Z"
+      },
+      "redacted_public_report": {
+        "path": "data/public-report-2025-q4.json",
+        "storage_root_hash": "0xf0016f88f1a47298528e33a932b1f7fe927dfe745a793257892253ef7f55d765",
+        "storage_tx_hash": "0x41935e296607f0496cdb91fb76fcab5ad3f48a6d3000056f21fa976f4f2af5d5",
+        "uploaded_at": "2026-06-21T15:50:48.021Z"
+      },
+      "metadata": {
+        "path": "data/report-proof-metadata-2025-q4.json",
+        "storage_root_hash": "0x5b3dcdfaf5c4fdaedaddb1744e26086e8dcdb374c14e2d773d9c5710e8147df8",
+        "storage_tx_hash": "0x95da4f0c8e45e8a394d2f7bed8920baeafd2a1e21c5a643525d17fad774432ff",
+        "uploaded_at": "2026-06-21T15:51:06.919Z"
+      }
+    }
+  }
+}

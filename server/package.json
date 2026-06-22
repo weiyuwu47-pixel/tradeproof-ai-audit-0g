@@ -1,0 +1,23 @@
+{
+  "name": "tradeproof-ai-server",
+  "version": "1.0.0",
+  "description": "Local backend for TradeProof AI 0G Compute demo",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^6.36.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

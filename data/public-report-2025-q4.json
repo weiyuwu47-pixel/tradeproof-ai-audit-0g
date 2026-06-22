@@ -1,0 +1,113 @@
+{
+  "report_id": "PUBLIC-NTC-EXPORT-2025-Q4-SNAPSHOT-001",
+  "report_period": "2025-Q4",
+  "report_type": "Redacted Public Business Capability Report",
+  "confidentiality": "public_redacted",
+  "generated_at": "2026-06-21T15:49:45.556Z",
+  "generation_context": {
+    "compute_mode": "0g_private_computer",
+    "model_id": "0gm-1.0-35b-a3b",
+    "input_snapshot_count": 1,
+    "redaction_policy_id": "tradeproof-public-redaction-v1"
+  },
+  "public_summary": "NTC Precision Components Co., Ltd. is a verified manufacturer of NTC thermistor sensors and temperature sensing solutions based in Dongguan, China. The company serves a diverse global customer base across multiple industries, demonstrating strong export capabilities and product versatility. Current business activity indicates active engagement with international buyers in industrial, appliance, and automotive sectors.",
+  "disclosed_metrics": {
+    "total_records": 6,
+    "total_quantity_range": {
+      "lower_bound_units": 250000,
+      "upper_bound_units": 300000,
+      "display": "250,000 - 300,000 units"
+    },
+    "active_customer_regions": [
+      "Asia",
+      "Europe",
+      "North America",
+      "South America"
+    ],
+    "product_model_count": 4
+  },
+  "derived_customer_context": {
+    "customer_region_distribution": {
+      "Europe": 2,
+      "South America": 1,
+      "Asia": 2,
+      "North America": 1
+    },
+    "customer_country_distribution": {
+      "Germany": 1,
+      "Turkey": 1,
+      "Brazil": 1,
+      "India": 1,
+      "Vietnam": 1,
+      "Mexico": 1
+    },
+    "customer_industry_distribution": {
+      "industrial automation": 1,
+      "home appliance manufacturing": 1,
+      "HVAC equipment": 1,
+      "battery pack integration": 1,
+      "consumer electronics assembly": 1,
+      "automotive electronics": 1
+    },
+    "customer_size_tier_distribution": {
+      "mid-market": 2,
+      "large enterprise": 2,
+      "growth-stage manufacturer": 1,
+      "tier-2 automotive supplier": 1
+    },
+    "end_market_distribution": {
+      "industrial temperature control": 1,
+      "home appliance": 1,
+      "HVAC": 1,
+      "battery pack": 1,
+      "consumer electronics": 1,
+      "automotive temperature sensing": 1
+    },
+    "customer_main_product_signals": {
+      "temperature control modules": 1,
+      "industrial sensor assemblies": 1,
+      "washing machines": 1,
+      "refrigeration components": 1,
+      "commercial air conditioners": 1,
+      "temperature control boards": 1,
+      "e-bike battery packs": 1,
+      "energy storage modules": 1,
+      "smart home devices": 1,
+      "consumer electronics modules": 1,
+      "automotive harnesses": 1,
+      "temperature sensing modules": 1
+    }
+  },
+  "product_and_pipeline_signals": {
+    "product_model_distribution": {
+      "MF59A": 2,
+      "MF58": 2,
+      "MF5A-3": 1,
+      "Custom Probe": 1
+    },
+    "status_distribution": {
+      "sample_request": 2,
+      "quotation": 2,
+      "order": 2
+    },
+    "application_distribution": {
+      "industrial temperature control": 1,
+      "home appliance": 1,
+      "HVAC": 1,
+      "battery pack": 1,
+      "consumer electronics": 1,
+      "automotive temperature sensing": 1
+    }
+  },
+  "capability_summary": {
+    "export_reach": "Active in Europe, Asia, North America, and South America. Served regions include Germany, Turkey, Brazil, India, Vietnam, and Mexico.",
+    "served_industries": "Industrial automation, home appliance manufacturing, HVAC equipment, battery pack integration, consumer electronics assembly, and automotive electronics.",
+    "product_range": "NTC thermistor sensors (standard models), epoxy coated NTC sensors, and custom temperature probes. Applications include industrial temperature control, home appliances, HVAC, battery packs, consumer electronics, and automotive sensing.",
+    "audit_relevance": "Supplier demonstrates capability to handle multi-industry requirements, varying order sizes (15,000 to 80,000 units), and diverse commercial terms. Product range covers both standard and custom solutions, indicating flexible manufacturing capabilities."
+  },
+  "redaction_statement": {
+    "policy_id": "tradeproof-public-redaction-v1",
+    "input_snapshot_count": 1,
+    "description": "AI processing used the confidential input snapshot to derive aggregate capability signals. Sensitive customer identity, contact, order identifier, exact price, exact amount, margin, and payment term details were removed from this public output."
+  }
+}

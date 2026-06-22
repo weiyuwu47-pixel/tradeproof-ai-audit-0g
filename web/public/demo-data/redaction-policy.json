@@ -1,0 +1,43 @@
+{
+  "policy_id": "tradeproof-public-redaction-v1",
+  "purpose": "Allow customers and third-party factory auditors to review delivery capability without exposing confidential customer identity, pricing, margin, contact, or order-level commercial terms.",
+  "input_scope": {
+    "raw_snapshot_count": 1,
+    "description": "The AI report generator receives one confidential raw business snapshot. Both the full internal report and the redacted public report are derived from this same input."
+  },
+  "forbidden_public_fields": [
+    "customer_name",
+    "contact_name",
+    "contact_email",
+    "record_id",
+    "quoted_unit_price_usd",
+    "amount_usd",
+    "estimated_margin_rate",
+    "payment_terms"
+  ],
+  "forbidden_public_content": [
+    "exact customer identity",
+    "individual contact information",
+    "order-level identifiers",
+    "exact transaction amounts",
+    "unit quotations",
+    "profit or margin information",
+    "payment terms"
+  ],
+  "allowed_public_signals": [
+    "customer_region_distribution",
+    "customer_country_distribution_without_customer_names",
+    "customer_industry_distribution",
+    "customer_size_tier_distribution",
+    "product_model_distribution",
+    "application_distribution",
+    "status_distribution",
+    "quantity_range",
+    "capability_summary"
+  ],
+  "quantity_bucket_policy": {
+    "bucket_size_units": 50000,
+    "rounding": "nearest_outer_range",
+    "example": "238000 units may be disclosed as 200000-250000 units"
+  }
+}

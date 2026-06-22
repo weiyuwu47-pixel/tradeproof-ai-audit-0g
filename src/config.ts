@@ -77,8 +77,10 @@ export function getNetwork(name?: string, mode?: string): NetworkConfig {
   const base = NETWORKS[networkName];
   return {
     ...base,
+    rpcUrl: process.env.OG_STORAGE_RPC || process.env.OG_RPC_URL || base.rpcUrl,
+    chainId: process.env.OG_CHAIN_ID ? Number(process.env.OG_CHAIN_ID) : base.chainId,
     mode: storageMode,
-    indexerRpc: INDEXER_URLS[networkName][storageMode],
+    indexerRpc: process.env.OG_STORAGE_INDEXER_RPC || INDEXER_URLS[networkName][storageMode],
   };
 }
 

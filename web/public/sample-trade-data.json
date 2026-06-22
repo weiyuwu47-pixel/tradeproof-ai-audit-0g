@@ -1,0 +1,9 @@
+{
+  "record_type": "export_trade_sample",
+  "product": "NTC thermistor sensor",
+  "model": "MF59A",
+  "customer_country": "Germany",
+  "quantity": 50000,
+  "status": "sample and quotation stage",
+  "business_context": "The customer is evaluating samples before potential mass production."
+}

@@ -3,10 +3,22 @@ dist/
 uploads/
 downloads/
 .env
+.env.local
+*.local
+.DS_Store
+*.pem
+*.key
+*private-key*
+*private_key*
+secrets/
+artifacts/
+cache/
+output/
 
 # Web frontend
 web/node_modules/
 web/dist/
+web/.DS_Store
 
 # Test artifacts
 test-uploads/*.tmp

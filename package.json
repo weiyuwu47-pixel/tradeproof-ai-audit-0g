@@ -1,6 +1,8 @@
 {
-  "name": "0g-storage-ts-starter",
-  "engines": { "node": ">=18" },
+  "name": "tradeproof-capability-report-0g",
+  "engines": {
+    "node": ">=18"
+  },
   "version": "2.0.0",
   "type": "module",
   "main": "./dist/src/index.js",
@@ -19,6 +21,19 @@
     "upload:encrypted": "tsx scripts/encrypted-upload.ts",
     "download:encrypted": "tsx scripts/encrypted-download.ts",
     "peek": "tsx scripts/peek-header.ts",
+    "report": "npm run report:generate && npm run report:check-redaction && npm run report:upload",
+    "report:generate": "node scripts/generate-reports.cjs",
+    "report:generate:0g": "node scripts/generate-reports.cjs --compute 0g",
+    "report:check-redaction": "node scripts/check-redaction.cjs",
+    "report:upload": "tsx scripts/upload-report-bundle.ts",
+    "proof:deploy": "hardhat run scripts/deploy-trade-proof.cjs --network ogGalileo",
+    "proof": "npm run proof:create && npm run proof:read && npm run proof:verify",
+    "proof:create": "hardhat run scripts/create-proof.cjs --network ogGalileo",
+    "proof:read": "hardhat run scripts/read-proof.cjs --network ogGalileo",
+    "proof:verify": "node scripts/verify-report-proof.cjs",
+    "demo:local": "npm run report:generate && npm run report:check-redaction && npm run proof:verify",
+    "demo:onchain": "npm run report:generate && npm run report:check-redaction && npm run report:upload && npm run proof:create && npm run proof:read && npm run proof:verify",
+    "web:sync-demo-data": "node scripts/sync-web-demo-data.cjs",
     "test:all": "tsx scripts/test-all.ts",
     "test:sdk-encryption": "tsx scripts/test-sdk-encryption.ts",
     "web": "cd web && npm run dev",
@@ -29,11 +44,13 @@
   "dependencies": {
     "@0gfoundation/0g-ts-sdk": "^1.2.6",
     "commander": "^11.1.0",
-    "dotenv": "^16.3.1",
     "ethers": "^6.13.1"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
     "@types/node": "^20.11.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.28.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   }
